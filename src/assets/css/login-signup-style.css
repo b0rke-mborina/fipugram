@@ -1,0 +1,63 @@
+html, body {
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+
+.login-div {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background-color: skyblue;
+}
+
+.form-group {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
+.form-label {
+	text-align: left;
+	text-indent: 10%;
+	font-size: 24px;
+	display: block;
+}
+
+.form-input {
+	width: 100%;
+	border: 2px solid #000000;
+	margin-top: 15px;
+	background-color: inherit;
+	display: block;
+	font-size: 20px;
+}
+
+.form-text {
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.form-submit-button {
+	border: 2px solid #000000;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: blue;
+	display: block;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.login-div {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.login-div {
+		width: 100%;
+	}
+}
