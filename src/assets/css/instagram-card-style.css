@@ -1,0 +1,36 @@
+.ig-card {
+	border: 1px solid #8f8f8f;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-align: left;
+}
+
+.card-header {
+	background-color: #fcfcfc;
+	height: 50px;
+	align-items: left;
+	
+}
+
+.card-header-text {
+	line-height: 50px;
+}
+
+.card-photo {
+	width: 100%;
+}
+
+.ig-photo {
+	width: 100%;
+}
+
+.card-footer {
+	background-color: #fcfcfc;
+	height: 50px;
+	align-items: left;
+	vertical-align: middle;
+}
+
+.card-footer-text {
+	line-height: 50px;
+}

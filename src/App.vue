@@ -1,13 +1,47 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/login">Login</router-link> |
-		<router-link to="/signup">Sign up</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div id="app">
+		<div class="nav">
+			<div class="nav-part">
+				<img src="@/assets/images/instagram-logo.svg" alt="Instagram logo" class="app-logo">
+				<span class="app-name">Fipugram</span>
+				<router-link to="/" class="nav-link">Home</router-link> |
+				<router-link to="/login" class="nav-link">Login</router-link> |
+				<router-link to="/signup" class="nav-link">Sign up</router-link>
+				
+			</div>
+			<div class="nav-part">
+				<form action="">
+					<input type="text" id="nav-search" placeholder="Search" v-model="store.searchTerm">
+				</form>
+			</div>
+			<div class="nav-part">
+				<img src="@/assets/images/instagram-compass-icon.png" alt="Compass icon" class="nav-icon">
+				<img src="@/assets/images/instagram-heart-icon.png" alt="Heart icon" class="nav-icon">
+				<img src="@/assets/images/instagram-user-icon.png" alt="Profile icon" class="nav-icon">
+			</div>
+			<button type="button" role="button" id="toggler" class="vert-center" data-toggle="collapse"
+                 aria-controls="list-nav" aria-expanded="false" aria-label="Toggle navigation">
+         	<span class="navbar-toggle-icon">
+               <img src="@/assets/images/menu-rounded-solid.svg" alt="Menu icon" class="menu-icon">
+            </span>
+         </button>
+    	</div>
+		<router-view/>
+	</div>
 </template>
+
+<script>
+import store from "@/store.js"
+
+export default {
+	name: "app",
+	data() {
+		return {
+			store
+		}
+	}
+}
+</script>
 
 <style lang="scss">
 	#app {
@@ -30,5 +64,6 @@
 		}
 	}
 	}
-	@import './assets/css/login-signup-style.css';
+	
+	@import './assets/css/style.css';
 </style>

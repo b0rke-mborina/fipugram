@@ -17,3 +17,7 @@
 		</div>
 	</div>
 </template>
+
+<style lang="scss">
+	@import '../assets/css/login-signup-style.css';
+</style>
